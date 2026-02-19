@@ -122,8 +122,8 @@ const BeforeAfterGallery = () => {
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-6" ref={ref}>
+    <section className="py-16 sm:py-24 lg:py-32 bg-background relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6" ref={ref}>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -134,7 +134,7 @@ const BeforeAfterGallery = () => {
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-gold mb-4">
             Resultados Reales
           </p>
-          <h2 className="font-serif text-5xl lg:text-6xl text-foreground mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-6xl text-foreground mb-4 sm:mb-6">
             Antes & Después
           </h2>
           <p className="font-sans text-muted-foreground max-w-2xl mx-auto">
@@ -172,7 +172,7 @@ const BeforeAfterGallery = () => {
                 <p className="font-sans text-xs tracking-[0.2em] uppercase text-gold mb-2">
                   Tratamiento
                 </p>
-                <h3 className="font-serif text-4xl text-foreground mb-4">
+                <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-foreground mb-4">
                   {galleryItems[activeIndex].treatment}
                 </h3>
                 <p className="font-sans text-muted-foreground">

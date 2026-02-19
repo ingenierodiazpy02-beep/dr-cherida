@@ -60,20 +60,20 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-24 lg:py-32 bg-gradient-to-b from-background via-beige/10 to-background relative overflow-hidden">
+    <section id="contacto" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-background via-beige/10 to-background relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
       <div className="absolute top-20 left-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-gold/5 rounded-full blur-3xl" />
 
 
-      <div className="container mx-auto px-6 relative" ref={ref}>
+      <div className="container mx-auto px-4 sm:px-6 relative" ref={ref}>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 lg:mb-20"
         >
           <motion.div
             className="mb-4"
@@ -85,17 +85,17 @@ const ContactSection = () => {
               Contacto
             </p>
           </motion.div>
-          <h2 className="font-serif text-5xl lg:text-6xl text-foreground mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-6xl text-foreground mb-4 sm:mb-6">
             Agenda tu Consulta
           </h2>
-          <p className="font-sans text-muted-foreground max-w-xl mx-auto leading-relaxed">
+          <p className="font-sans text-sm sm:text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">
             Da el primer paso hacia la mejor versión de ti.
             Estoy aquí para guiarte en tu transformación.
           </p>
           <div className="w-16 h-px bg-gold mx-auto mt-6" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -104,7 +104,7 @@ const ContactSection = () => {
             className="order-2 lg:order-1"
           >
             {/* Form Card */}
-            <div className="relative bg-card/80 backdrop-blur-sm p-8 lg:p-10 rounded-2xl shadow-elegant border border-gold/10">
+            <div className="relative bg-card/80 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-2xl shadow-elegant border border-gold/10">
               {/* Decorative corner accents */}
               <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-gold/30 rounded-tl-2xl" />
               <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-gold/30 rounded-br-2xl" />
@@ -247,8 +247,8 @@ const ContactSection = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.2747441839377!2d-69.9352!3d18.4661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5ab%3A0x5c4f3c9e5f1a1b1a!2sBella%20Vista%2C%20Santo%20Domingo!5e0!3m2!1sen!2sdo!4v1234567890"
                 width="100%"
-                height="250"
-                style={{ border: 0 }}
+                height="220"
+                style={{ border: 0, minHeight: '180px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

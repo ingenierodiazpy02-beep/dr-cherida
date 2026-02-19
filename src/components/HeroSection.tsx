@@ -122,9 +122,9 @@ const HeroSection = () => {
       />
 
 
-      {/* Text overlay - EPIC alignment */}
-      <div className="relative z-20 flex flex-col justify-end items-end min-h-screen px-4 sm:px-6 md:px-20 lg:pr-48 pb-12 sm:pb-16 md:pb-24">
-        <div className="text-center max-w-xl">
+      {/* Text overlay */}
+      <div className="relative z-20 flex flex-col justify-end items-center md:items-end min-h-screen px-6 sm:px-10 md:px-16 lg:pr-48 pb-16 sm:pb-20 md:pb-24">
+        <div className="text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}

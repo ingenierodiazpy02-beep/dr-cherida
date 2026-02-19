@@ -101,18 +101,18 @@ const ServicesSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="servicios" className="py-24 lg:py-32 relative overflow-x-clip" style={{ backgroundColor: '#ddd7c9' }}>
-      <div className="container mx-auto px-6" ref={ref}>
+    <section id="servicios" className="py-16 sm:py-24 lg:py-32 relative overflow-x-clip" style={{ backgroundColor: '#ddd7c9' }}>
+      <div className="container mx-auto px-4 sm:px-6" ref={ref}>
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 lg:mb-20"
         >
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-gold mb-4">Servicios</p>
-          <h2 className="font-serif text-5xl lg:text-6xl text-foreground mb-6">Excelencia Quirúrgica</h2>
-          <p className="font-sans text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-6xl text-foreground mb-4 sm:mb-6">Excelencia Quirúrgica</h2>
+          <p className="font-sans text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Combinamos precisión médica con una visión estética artística para revelar tu mejor versión.
           </p>
         </motion.div>

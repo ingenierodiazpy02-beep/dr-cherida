@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 const RecognitionSection = () => {
     return (
-        <section className="relative py-24 md:py-32 bg-background overflow-hidden font-sans">
+        <section className="relative py-16 sm:py-24 md:py-32 bg-background overflow-hidden font-sans">
             {/* Subtle decorative elements */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-gradient-to-b from-accent to-transparent" />
 
-            <div className="max-w-4xl mx-auto px-6 text-center">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ const RecognitionSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.1 }}
-                    className="font-serif text-3xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.15] mb-8"
+                    className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.15] mb-8"
                 >
                     <span className="inline-block whitespace-nowrap">Excelencia en Cirugía Facial</span>
                     <br />

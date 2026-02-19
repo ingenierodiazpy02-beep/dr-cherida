@@ -98,30 +98,26 @@ const AboutSection = () => {
         </motion.div>
 
         {/* ── Hero Two-Column ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-20 items-start mb-20 sm:mb-28 lg:mb-32 max-w-[1320px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-20 items-stretch mb-20 sm:mb-28 lg:mb-32 max-w-[1320px] mx-auto">
 
           {/* Left — Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="relative mx-auto w-full max-w-[420px] sm:max-w-[500px] lg:max-w-none"
+            className="relative mx-auto w-full max-w-[420px] sm:max-w-[500px] lg:max-w-none flex flex-col"
           >
             {/* Premium frame layers */}
             <div className="absolute -inset-6 sm:-inset-10 border border-gold/5 rounded-sm -z-20" />
             <div className="absolute -inset-4 sm:-inset-6 border-[10px] sm:border-[15px] border-gold/10 rounded-sm -z-10" />
             <div className="absolute -inset-1 border border-gold/40 rounded-sm" />
 
-            <div className="relative p-3 sm:p-4 bg-white shadow-2xl rounded-sm overflow-hidden group">
-              <div
-                className="relative overflow-hidden bg-charcoal"
-                style={{ maxHeight: "clamp(320px, 55vw, 650px)" }}
-              >
+            <div className="relative p-3 sm:p-4 bg-white shadow-2xl rounded-sm overflow-hidden group flex-1 flex flex-col">
+              <div className="relative overflow-hidden bg-charcoal flex-1 min-h-[320px]">
                 <motion.img
                   src="/about-me-final.jpeg"
                   alt="Dra. Cherida Bautista"
-                  className="w-full object-cover object-center"
-                  style={{ maxHeight: "clamp(320px, 55vw, 650px)", objectFit: "cover" }}
+                  className="absolute inset-0 w-full h-full object-cover object-top"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 1.5 }}
                 />

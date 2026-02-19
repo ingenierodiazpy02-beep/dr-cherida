@@ -73,7 +73,7 @@ const TestimonialsSection = () => {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-gold/[0.03] rounded-full" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10" ref={ref}>
+      <div className="container mx-auto px-4 sm:px-6 relative z-10" ref={ref}>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -86,7 +86,7 @@ const TestimonialsSection = () => {
             <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-gold font-semibold">Palabras de Confianza</p>
             <div className="h-px w-8 bg-gold/50" />
           </div>
-          <h2 className="font-serif text-4xl lg:text-7xl text-charcoal mb-8 leading-tight tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl lg:text-7xl text-charcoal mb-6 sm:mb-8 leading-tight tracking-tight">
             Voz de <span className="italic font-light text-gold">Excelencia</span>
           </h2>
           <div className="w-12 h-0.5 bg-gold/30 mx-auto" />
